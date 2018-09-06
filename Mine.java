@@ -18,6 +18,12 @@ public class Mine{
 		yourLamp.setColor("blue");
 		System.out.println(yourLamp.showStatus());
 		
+		StopWatch s = new StopWatch();
+		s.start();
+		Thread.sleep(4000);
+		s.stop();
+		System.out.println("Timer ran for " + s.time() + "seconds." );
+		
 		System.out.println("Lamp is " + myLamp.isOn() + "and is color " + myLamp.getColor() + " and is wattage ")
 		+ myLamp.getWatts());
 		
