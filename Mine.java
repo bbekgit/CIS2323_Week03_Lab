@@ -10,7 +10,13 @@ public class Mine{
 		myLamp.setWatts(45);
 		myLamp.turnOn();
 		String status = myLamp.showStatus();
-		System.out.println(statu);
+		System.out.println(status);
+		
+		Lamp yourLamp = new Lamp();
+		Yours.print();
+		yourLamp.setWatts(50);
+		yourLamp.setColor("blue");
+		System.out.println(yourLamp.showStatus());
 		
 		System.out.println("Lamp is " + myLamp.isOn() + "and is color " + myLamp.getColor() + " and is wattage ")
 		+ myLamp.getWatts());
